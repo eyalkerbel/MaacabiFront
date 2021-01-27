@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
-import Paper from "@material-ui/core/Paper";
-import { Grid, TextField, RadioGroup, FormControlLabel, FormLabel, Radio, Button } from '@material-ui/core';
+import { Grid, TextField, Button } from '@material-ui/core';
 import { connect } from "react-redux";
 import { Select, MenuItem } from "@material-ui/core";
 import axios from "axios";
@@ -29,23 +28,6 @@ class Regestraiton extends React.Component {
             age: this.state.age
         }
         this.props.addUser(user)
-        // return axios.request({
-        //     method: 'POST',
-        //     url: "/add_user",
-        //     data: {
-        //         userName: this.state.userName,
-        //         email: this.state.email,
-        //         age: this.state.age
-        //     }
-        // }).then(res => {
-        //     if (res.data.status == "notvalidate") {
-        //         this.setState({ status: "not validate" })
-        //     } else if (res.data.status == "succ") {
-        //         this.setState({ status: "successfully", userName: "", email: "", age: 0 });
-        //     } else {
-        //         this.setState({ status: "userName exsit" });
-        //     }
-        // });
     }
 
     handleSelect(event) {

@@ -33,7 +33,6 @@ export default class Switcher extends React.Component {
                 <Switch>
                     <Route path="/users" > <DisplayingUsers /></Route>
                     <Route path="/registration" > <Regestraiton /></Route>
-
                     <Route exact render={() => <RedirectorHome />} />
                 </Switch>
             </div>);

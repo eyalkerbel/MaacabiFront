@@ -15,8 +15,7 @@ let UserSchame = new Schema(
             minlength: 3
         },
         email: {
-            type: String,
-            // type: mongoose.SchemaTypes.Email,
+            type: mongoose.SchemaTypes.Email,
             required: true,
             minlength: 0
         },
